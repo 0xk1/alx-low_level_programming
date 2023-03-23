@@ -24,6 +24,5 @@ int main(void)
 		i++;
 	}
 	printf("%lu\n", largest);
-
 	return (0);
 }
