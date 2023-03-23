@@ -1,10 +1,10 @@
 #include <stdio.h>
-
+#include <math.h>
 /**
-  * main - Entry point
-  * Description: desc of the function
-  * Return: 0 (success)
-  */
+ * main - finds the largest prime
+ * Description: Uses headers to link and a nested loops to achieve goal
+ * Return: 0 if no errors
+ */
 
 
 int main(void)
