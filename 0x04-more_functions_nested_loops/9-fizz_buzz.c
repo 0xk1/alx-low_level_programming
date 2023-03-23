@@ -1,6 +1,7 @@
 #include <stdio.h>
 /**
   * main - entry point
+  * Description: fizzbuzz function
   * Return: 0 (success)
   */
 
