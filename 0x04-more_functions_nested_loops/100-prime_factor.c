@@ -1,5 +1,11 @@
 #include <stdio.h>
 
+/**
+  * main - Entry point
+  * Description: desc of the function
+  * Return: 0 (success)
+  */
+
 
 int main(void)
 {
