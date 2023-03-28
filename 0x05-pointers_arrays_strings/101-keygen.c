@@ -15,7 +15,7 @@ int main(void)
 	int n;
 	int sum = 0;
 
-	scand(time(NULL));
+	srand(time(NULL));
 
 	while (i < 100)
 	{
