@@ -15,7 +15,7 @@ char *cap_string(char *arr)
 
 	while (arr[i])
 	{
-		if (i == 0 || arr[i - 1] == ' ' || arr[i - 1] == '\t'
+		if (arr[i - 1] == ' ' || arr[i - 1] == '\t'
 		|| arr[i] == '\n' || arr[i - 1] == ','
 		|| arr[i - 1] == ';' || arr[i - 1] == '.'
 		|| arr[i - 1] == '!' || arr[i - 1] == '?'
