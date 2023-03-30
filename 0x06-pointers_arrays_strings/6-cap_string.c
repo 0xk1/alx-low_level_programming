@@ -18,9 +18,10 @@ char *cap_string(char *arr)
 		|| arr[i - 1] == '!' || arr[i - 1] == '?'
 		|| arr[i - 1] == '\"' || arr[i - 1] == '('
 		|| arr[i - 1] == ')' || arr[i - 1] == '{'
-		|| arr[i - 1] == '}') && (arr[i] >= 'a' && arr[i] <= 'z'))
+		|| arr[i - 1] == '}'))
 		{
-			arr[i] -= 32;
+			if (arr[i] >= 'a' && arr[i] <= 'z')
+				arr[i] -= 32;
 		}
 		i++;
 	}
