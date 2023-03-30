@@ -10,8 +10,8 @@ char *cap_string(char *arr)
 {
 	int i = 0;
 
-	if (s[i] >= 'a' && s[i] <= 'z')
-		s[i] -= 32;
+	if (arr[i] >= 'a' && arr[i] <= 'z')
+		arr[i] -= 32;
 
 	while (arr[i])
 	{
