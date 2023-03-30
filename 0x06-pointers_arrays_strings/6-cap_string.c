@@ -2,32 +2,32 @@
 
 /**
  * cap_string - Captilizes the string given as parameter
- * @arr: the string
+ * @s: the string
  * Return: the captilized string
  **/
 
-char *cap_string(char *arr)
+char *cap_string(char *s)
 {
-	int i = 0;
+	int i;
 
-	if (arr[i] >= 'a' && arr[i] <= 'z')
-		arr[i] -= 32;
-
-	while (arr[i])
+	i = 0;
+	if (s[i] >= 'a' && s[i] <= 'z')
 	{
-		if (arr[i - 1] == ' ' || arr[i - 1] == '\t'
-		|| arr[i] == '\n' || arr[i - 1] == ','
-		|| arr[i - 1] == ';' || arr[i - 1] == '.'
-		|| arr[i - 1] == '!' || arr[i - 1] == '?'
-		|| arr[i - 1] == '\"' || arr[i - 1] == '('
-		|| arr[i - 1] == ')' || arr[i - 1] == '{'
-		|| arr[i - 1] == '}')
-		{
-			if (arr[i] >= 'a' && arr[i] <= 'z')
-				arr[i] -= 32;
-		}
-		i++;
+		s[i] -= 32;
 	}
 
-	return (arr);
+	while (s[i])
+	{
+		if (s[i] == ' ' || s[i] == '\t' || s[i] == '\n' || s[i] == ','
+			|| s[i] == ';' || s[i] == '.' || s[i] == '!' || s[i] == '?'
+			|| s[i] == '\"' || s[i] == '(' || s[i] == ')' || s[i] == '{'
+			|| s[i] == '}')
+		{
+			if (s[i + 1] >= 'a' && s[i + 1] <= 'z')
+				s[i + 1] -= 'a' - 'A';
+		}
+
+		i++;
+	}
+	return (s);
 }
