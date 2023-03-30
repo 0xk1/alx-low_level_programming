@@ -10,6 +10,9 @@ char *cap_string(char *arr)
 {
 	int i = 0;
 
+	if (s[i] >= 'a' && s[i] <= 'z')
+		s[i] -= 32;
+
 	while (arr[i])
 	{
 		if (i == 0 || arr[i - 1] == ' ' || arr[i - 1] == '\t'
