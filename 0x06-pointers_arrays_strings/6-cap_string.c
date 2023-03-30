@@ -12,13 +12,13 @@ char *cap_string(char *arr)
 
 	while (arr[i])
 	{
-		if ((i == 0 || arr[i - 1] == ' ' || arr[i - 1] == '\t'
+		if (i == 0 || arr[i - 1] == ' ' || arr[i - 1] == '\t'
 		|| arr[i] == '\n' || arr[i - 1] == ','
 		|| arr[i - 1] == ';' || arr[i - 1] == '.'
 		|| arr[i - 1] == '!' || arr[i - 1] == '?'
 		|| arr[i - 1] == '\"' || arr[i - 1] == '('
 		|| arr[i - 1] == ')' || arr[i - 1] == '{'
-		|| arr[i - 1] == '}'))
+		|| arr[i - 1] == '}')
 		{
 			if (arr[i] >= 'a' && arr[i] <= 'z')
 				arr[i] -= 32;
