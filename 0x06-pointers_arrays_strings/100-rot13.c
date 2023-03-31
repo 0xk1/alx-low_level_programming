@@ -11,12 +11,13 @@
 char *rot13(char *s)
 {
 	int i = 0;
-	int j = 0;
+	int j;
 	char data1[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	char datarot[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
 	while (s[i])
 	{
+		j = 0;
 		while (j < 52)
 		{
 			if (s[i] == data1[j])
