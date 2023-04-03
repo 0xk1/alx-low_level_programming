@@ -10,20 +10,23 @@
 unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int count = 0;
-	char *p = accept;
+	int i = 0;
+	int j = 0;
 
 	while (*s)
 	{
-		while (*p)
+		while (*accept)
 		{
-			if (*p++ == *s)
-				break;
-		}
-		count++;
-		s++;
+			if (*(s + i) == *(accept + j))
+			{
+				count++;
+				j = 0;
+				i++;
+			}
+			else
+				j++;
 
-		if (!*p)
-			return (count);
-	}
+		}
+		break;
 	return (count);
 }
