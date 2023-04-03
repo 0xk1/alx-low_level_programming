@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * print_diagsums - print the sum of the two diagonals of a squeare matrix 
+ * print_diagsums - print the sum of the two diagonals of a squeare matrix
  *
  * @a: pointer to an integer
  * @size: int
