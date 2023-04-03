@@ -22,11 +22,11 @@ void print_diagsums(int *a, int size)
 		s++;
 	}
 
-	s = 0;
+	s = 1;
 
-	while (s < size)
+	while (s < size + 1)
 	{
-		sum2 += a[(size + 1) * s];
+		sum2 += a[(size - 1) * s];
 		s++;
 	}
 
