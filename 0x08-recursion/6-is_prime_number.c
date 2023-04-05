@@ -27,5 +27,5 @@ int _isPrime(int n, int i)
 		return (1);
 	if (n % i == 0)
 		return (0);
-	return (_sqrt(n, i - 1));
+	return (_isPrime(n, i - 1));
 }
