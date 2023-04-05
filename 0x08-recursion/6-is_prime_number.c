@@ -1,6 +1,6 @@
 #include "main.h"
 
-int _sqrt(int n, int i);
+int _isPrime(int n, int i);
 
 /**
  * is_prime_number - returns 1 if prime and 0 if not
@@ -11,17 +11,17 @@ int is_prime_number(int n)
 {
 	if (n <= 0)
 		return (0);
-	return (_sqrt(n, (n / 2) + 1));
+	return (_isPrime(n, (n / 2) + 1));
 
 }
 
 /**
- * _sqrt - helper function
+ * _isPrime - helper function
  * @n: the number
  * @i: mid
  * Return: 1 or 0
  */
-int _sqrt(int n, int i)
+int _isPrime(int n, int i)
 {
 	if (i == 1)
 		return (1);
