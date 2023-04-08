@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
 
 		while (nbr > 0)
 		{
-			while (nbr > coins[i])
+			while (nbr >= coins[i])
 			{
 				nbr -= coins[i];
 				count++;
