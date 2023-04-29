@@ -4,6 +4,7 @@ section .data
 	global main
 main:
 	mov rax,1
-	mov rdi, msg
+	mov rdi,1
+	mov rsi, msg
 	mov rdx, 17
 	syscall
