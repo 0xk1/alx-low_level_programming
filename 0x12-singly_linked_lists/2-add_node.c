@@ -17,7 +17,7 @@ int _strlen(const char *str)
 /**
  * add_node - adds a new node
  * @head: double pointer to list_t
- * @str: pointer to the first node in list_t
+ * @str: str
  * Return: a pointer to the new string or NULL if it failed
  */
 
