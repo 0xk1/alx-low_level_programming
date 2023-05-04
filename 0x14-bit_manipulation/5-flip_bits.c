@@ -6,8 +6,7 @@
  * @m: the number to compare
  * Return: the number of different bits
  */
-
-unsigned int flip_bits(unsigned long int n, unsigned long int n)
+unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
 	int i;
 
