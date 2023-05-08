@@ -9,10 +9,22 @@
 
 int append_text_to_file(const char *filename, char *text_content)
 {
-	int o, r, w, len;
+	int o, r, w, len = 0;
 
 	if (!filename)
+		return (-1);
 
+	while (text_content[len])
+		len++;
+
+
+	o = open(filename, O-WRONLY |O_APPEND);
+	w = write(o, text_content, len);
+
+	if (o == -1 || w == -1)
+		return (-1);
+
+	close(o);
 
 	return (1);
 }
