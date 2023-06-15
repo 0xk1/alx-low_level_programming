@@ -8,7 +8,7 @@
  */
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
-	dlisint_t *new, *curr;
+	dlistint_t *new, *curr;
 
 	new = malloc(sizeof(dlistint_t));
 	if (!new)
