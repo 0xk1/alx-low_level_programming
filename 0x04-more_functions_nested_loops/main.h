@@ -11,3 +11,4 @@ void print_square(int size);
 void print_triangle(int size);
 void print_number(int n);
 char *infinite_add(char *n1, char *n2, char *r, int size_r);
+int _strlen(char *s);
