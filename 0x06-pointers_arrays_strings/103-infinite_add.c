@@ -21,7 +21,6 @@ int _strlen(char *s)
  * @size_r: size of r
  * Return: sum
  */
-
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
 	int i, len1, len2, max, nbr1, nbr2, sum;
