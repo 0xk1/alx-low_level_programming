@@ -25,9 +25,6 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
 	int i, len1, len2, max, nbr1, nbr2, sum;
 
-	if (!n1 || !n2)
-		return (0);
-
 	len1 = _strlen(n1);
 	len2 = _strlen(n2);
 
@@ -44,6 +41,9 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 		nbr2 = (--len2 >= 0) ? (n2[len2] - '0') : 0;
 
 		sum = nbr1 + nbr2 + i;
+
+		if (sum == 0)
+			break;
 		if (sum >= 10)
 		{
 			r[size_r--] = sum % 10 + '0';
