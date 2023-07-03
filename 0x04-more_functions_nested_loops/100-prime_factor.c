@@ -6,23 +6,23 @@
  * Return: 0 if no errors
  */
 
-
 int main(void)
 {
 	unsigned long i = 2;
 	unsigned long largest = 0;
 	unsigned long n = 612852475143;
 
-	while (n > i)
+	while (i < n / 2 + 1)
 	{
 		while (n % i == 0)
 		{
-			if (i > largest)
-				largest = i;
-			n = n / i;
+			largest = i;
+			n /=  i;
 		}
 		i++;
 	}
+	if (n > 2)
+		largest = n;
 	printf("%lu\n", largest);
 	return (0);
 }
